@@ -21,7 +21,6 @@ window.addEventListener("load", function () {
         lateralMenuLinks.classList.toggle('noDisplay')
         socialLinks.classList.toggle('w50')
 
-
         if (hambMenu.classList.contains('active')) {
             headShotsJumpContainer.classList.toggle('footerTransition')
             footer.classList.toggle('footerTransition')
