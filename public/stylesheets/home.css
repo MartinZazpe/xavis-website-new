@@ -4,6 +4,7 @@
 
 body {
     margin: 0;
+    height: 100vh;
     width: 100%;
     /* viewport-fit: cover; */
     /* --ion-safe-area-top: env(safe-area-inset-top);
@@ -28,6 +29,8 @@ body {
 #main-section {
     display: flex;
     flex-flow: column wrap;
+    height: 100vh;
+    position: relative;
 }
 
 
@@ -72,7 +75,7 @@ header {
     flex-flow: column wrap;
     justify-content: center;
     align-content: flex-end;
-    width: 1vw;
+    position: relative;
 }
 
 #hamburguer-menu .bar1,
@@ -84,8 +87,20 @@ header {
     border-radius: 3px;
     width: 50px;
     height: 3px;
-    background-color: #f5f1f1;
+    background-color: #e7e1e1;
+    transition: transform 0.3s linear;
 }
+
+
+.transformToX1 {
+    transform: rotate(45deg) translate(5px, 3px);
+}
+
+.transformToX2 {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+
 
 #main-content {
     display: Flex;
@@ -100,6 +115,9 @@ header {
     width: 250px;
     height: 50px;
     border-radius: 10px;
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 0.3s linear, opacity 0.3s linear;
 }
 
 
@@ -115,9 +133,19 @@ footer {
     width: 100%;
     height: 100px;
     background-color: transparent;
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 0.3s linear, opacity 0.3s linear;
 }
 
-#social-links {
+
+.footerTransition {
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
+
+
+.social-links {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -126,12 +154,67 @@ footer {
     width: 40%;
     background: linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
     background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    transition: width 0.5s linear;
 }
 
-#social-links>* {
+/* .social-links>* {
     color: #FFFFFF;
-}
+} */
 
 #copyright {
     padding: 10px 0px 0px 0px;
+}
+
+
+
+#lateral-navbar {
+    height: 100vh;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* opacity: 50%; */
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
+    transition: visibility 0.3s ease-in-out;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-evenly
+}
+
+
+.Lateral-nav-container,
+.Lateral-links-container {
+    height: 50vh;
+    display: flex;
+    flex-flow: wrap;
+}
+
+.Lateral-nav-container {
+    align-items: center;
+}
+
+.Lateral-links-container {
+    align-items: flex-end;
+    padding: 10px 0px 15px 0px;
+}
+
+#lateral-menu-links {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.appearVisible {
+    visibility: visible !important;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.noDisplay {
+    display: none;
 }
