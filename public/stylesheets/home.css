@@ -13,6 +13,12 @@ body {
 }
 
 
+
+#hambmenu-container-navbar {
+    display: none;
+}
+
+
 #background-image {
     margin: 0;
     position: absolute;
@@ -54,10 +60,12 @@ header {
 
 .title-major-container {
     justify-content: center;
+    padding-left: 10px;
 }
 
 .hambmenu-container {
     justify-content: flex-end;
+    padding-right: 10px;
 }
 
 
@@ -95,6 +103,7 @@ header {
 }
 
 
+
 .transformToX1 {
     transform: rotate(45deg) translate(5px, 1px);
 }
@@ -105,13 +114,49 @@ header {
 
 
 
+/* hamb menu for lat navbar */
+
+
+.hambmenu-container-navbar {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    padding-right: 10px;
+}
+
+#hamburguer-menu-navbar {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: flex-end;
+    position: relative;
+}
+
+#hamburguer-menu-navbar .bar1-nav,
+.bar2-nav,
+.bar3-nav {
+    display: block;
+    padding: 2px;
+    margin: 4px;
+    border-radius: 3px;
+    width: 50px;
+    height: 3px;
+    background-color: #e7e1e1;
+    transition: transform 0.3s linear;
+}
+
+/*   */
+
 #main-content {
     display: Flex;
     height: calc(100vh - 250px);
     flex-flow: column wrap;
     justify-content: flex-end;
-    align-items: center
+    align-items: center;
+    transition: 1s ease in out;
 }
+
 
 #headshots-jump-container {
     background-color: #111d11;
@@ -119,8 +164,12 @@ header {
     height: 50px;
     border-radius: 10px;
     opacity: 1;
-    visibility: visible;
-    transition: visibility 0.3s linear, opacity 0.3s linear;
+    transition: 1s ease-in-out;
+    color: blue;
+}
+
+.headShotJumpTransition {
+    opacity: -1 !important;
 }
 
 #desktop-landing-images {
@@ -141,7 +190,7 @@ footer {
     background-color: transparent;
     opacity: 1;
     visibility: visible;
-    transition: visibility 0.3s linear, opacity 0.3s linear;
+    transition: visibility 1s linear, opacity 1s linear;
 }
 
 
@@ -183,7 +232,7 @@ footer {
     bottom: 0;
     right: 0;
     visibility: hidden;
-    transition: visibility 0.3s ease-in-out;
+    transition: visibility 0.3s ease-in;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -191,10 +240,14 @@ footer {
 }
 
 
+
 .Lateral-nav-container {
-    height: 80vh;
+    height: 70vh;
     display: flex;
     flex-flow: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 
@@ -204,11 +257,6 @@ footer {
     flex-flow: wrap;
 }
 
-
-.Lateral-nav-container {
-    align-items: center;
-    width: 100%;
-}
 
 .Lateral-links-container {
     align-items: flex-end;
@@ -223,7 +271,7 @@ footer {
 
 
 #lateral-menu-navbar {
-    height: 100%;
+    height: 50%;
     width: 100%;
     display: flex;
     flex-flow: row wrap;
@@ -246,13 +294,8 @@ footer {
     cursor: pointer;
     padding: 20px 0px;
     width: 100%;
-    transition: color 0.3s ease-in-out;
+    /* transition: color 0.3s ease-in-out; */
 }
-
-#lateral-menu-navbar ul li:hover {
-    color: #ad9e9e
-}
-
 
 
 .appearVisible {
@@ -265,6 +308,10 @@ footer {
 
 .noDisplay {
     display: none;
+}
+
+.noVisible {
+    visibility: none;
 }
 
 
@@ -440,6 +487,10 @@ footer {
         margin: 0px 5px;
     }
 
+    /* #navbar-tablet:hover li {
+        cursor: pointer !important;
+    } */
+
     #main-section {
         height: 100vh;
         width: 100vw;
@@ -482,15 +533,22 @@ footer {
     .social-links-tablet {
         width: 100%;
         position: absolute;
-        right: 44% !important;
-        top: 5%
+        right: center !important;
+        top: 0;
+        height: 20px;
+    }
+
+    .navbar-tablet li:hover {
+        cursor: pointer;
+        color: #6b6868;
     }
 
     footer {
         display: none;
     }
-
 }
+
+
 
 @media (min-width: 1200px) {
 
@@ -507,6 +565,4 @@ footer {
     #resImage1200 {
         display: initial;
     }
-
-
 }
