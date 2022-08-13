@@ -2,9 +2,13 @@
     box-sizing: border-box;
 }
 
+/* * {
+    outline: 1px solid #f00 !important;
+} */
+
 body {
     margin: 0;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     /* viewport-fit: cover; */
     /* --ion-safe-area-top: env(safe-area-inset-top);
@@ -25,7 +29,7 @@ body {
     background: url('../../images/background/bg-image.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: left;
+    background-position: center;
     width: 100vw;
     height: 100vh;
     z-index: -1;
@@ -165,7 +169,13 @@ header {
     border-radius: 10px;
     opacity: 1;
     transition: 1s ease-in-out;
-    color: blue;
+}
+
+.clicked {
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+    -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+    box-shadow: inset 0px 0px 5px #180e0e !important;
+    background-color: rgb(151, 151, 228) !important;
 }
 
 .headShotJumpTransition {
@@ -182,7 +192,6 @@ footer {
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    width: 100%;
     position: fixed;
     bottom: 0px;
     width: 100%;
@@ -224,7 +233,7 @@ footer {
 
 #lateral-navbar {
     height: 100vh;
-    width: 80%;
+    width: 70%;
     background-color: rgba(0, 0, 0, 0.4);
     /* opacity: 50%; */
     position: absolute;
@@ -252,9 +261,11 @@ footer {
 
 
 .Lateral-links-container {
-    height: 20vh;
+    height: 30vh;
     display: flex;
     flex-flow: wrap;
+    text-align: center;
+    justify-content: center;
 }
 
 
@@ -289,7 +300,6 @@ footer {
 }
 
 #lateral-menu-navbar ul li {
-    margin-left: 30%;
     text-align: left;
     cursor: pointer;
     padding: 20px 0px;

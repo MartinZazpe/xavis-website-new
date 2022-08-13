@@ -23,10 +23,13 @@ window.addEventListener("load", function () {
 
 
 
+
+
     hambMenu.addEventListener('click', function () {
         hambMenu.style.display = "none"
         lateralNavbar.classList.add('active')
         if (lateralNavbar.classList.contains('active')) {
+            lateralNavbar.style.display = "initial"
             headShotJump.classList.toggle('headShotJumpTransition')
             footer.classList.toggle('footerTransition')
             lateralNavbar.classList.toggle('appearVisible')
@@ -38,6 +41,7 @@ window.addEventListener("load", function () {
             bar3Nav.classList.toggle('transformToX2')
         }
         hambMenuNav.onclick = () => {
+            lateralNavbar.style.display = "none"
             headShotJump.classList.toggle('headShotJumpTransition')
             footer.classList.toggle('footerTransition')
             lateralNavbar.classList.toggle('appearVisible')
