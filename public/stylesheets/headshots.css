@@ -552,7 +552,7 @@ footer {
         background: none;
         background-size: cover;
         background-position: center;
-        height: 70vh;
+        height: 65vh;
         width: 100%;
         display: flex;
         flex-flow: column row;
@@ -627,7 +627,7 @@ footer {
         height: 250px;
     }
 
-    /* 
+
     .title-major-container {
         width: 100%;
         display: flex;
@@ -637,7 +637,7 @@ footer {
     }
 
 
-    /* #title-container {
+    #title-container {
         padding: 30px 10px;
         display: flex;
         flex-flow: column wrap;
@@ -645,15 +645,15 @@ footer {
 
     #title-container #labor-union {
         padding-top: 10px;
-    } */
+    }
 
     #navbar-tablet {
+        width: 100%;
         padding: 0;
         display: initial;
         display: flex;
         flex-flow: row;
         justify-content: space-evenly;
-
     }
 
     #navbar-tablet li {
@@ -723,14 +723,35 @@ footer {
         scroll-behavior: smooth;
     }
 
+
+    /* 
+    #headshots-container {
+        width: 100%;
+        height: 100%;
+        display: Flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: start;
+        overflow: scroll;
+        scroll-behavior: smooth;
+        position: relative;
+    } */
+
+
+    #headshots-container>* {
+        width: 30%;
+        height: 250px;
+    }
+
     #left-container {
         width: 100%;
-        height: 20vh;
+        height: 25vh;
     }
 
 
     #right-container {
-        height: 70vh;
+        height: auto;
         width: 100vw;
         background: none;
         /* background: url('../images/background/bg-image.jpg') left no-repeat,
@@ -780,6 +801,20 @@ footer {
 
 
 @media (min-width: 1200px) {
+
+    .enlarge {
+        position: absolute;
+        width: 25% !important;
+        height: 100%;
+        background-size: contain;
+        /* top: center;
+        right: center */
+    }
+
+    #headshots-container>* {
+        width: 25%;
+        height: 250px;
+    }
 
     #title-container {
         margin-top: 20px;
