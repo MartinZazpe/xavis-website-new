@@ -20,18 +20,30 @@ window.addEventListener("load", function () {
     const bar2Nav = document.querySelector('#hamburguer-menu-navbar .bar2-nav')
     const bar3Nav = document.querySelector('#hamburguer-menu-navbar .bar3-nav')
 
+    const name = document.querySelector('#name').onclick = () => {
+        location.href = "/"
+    }
 
 
 
     let selectedImg
+
+
+
     Array.from(headShotsContainer.children).forEach((child, index) => {
+
+        // for (let i = 0;i < headShotsContainer.children.length;i++) {
+        //     headShotsContainer.style.overflow = "scroll"
+        //     headShotsContainer.children[i].classList.remove('dimHeadshot')
+        //     headShotsContainer.children[i].classList.remove('enlarge')
+        // }
+
         child.onclick = () => {
-            console.log(headShotsContainer.children[index])
+            // console.log(headShotsContainer.children[index])
             selectedImg = headShotsContainer.children[index]
             headShotsContainer.children[index].classList.toggle('enlarge')
             headShotsContainer.children[index].scrollIntoView({ block: "center", behavior: "smooth" })
             headShotsContainer.style.overflow = "hidden"
-
             if (selectedImg.classList.contains('enlarge')) {
                 for (let i = 0;i < headShotsContainer.children.length;i++) {
                     if (!headShotsContainer.children[i].classList.contains('enlarge')) {
@@ -52,15 +64,23 @@ window.addEventListener("load", function () {
     })
 
 
-
-
-
-
-
-    for (var i = 0;i < headShotsContainer.length;i++) {
-        console.log(headShotsContainer[i])
+    let escapeImg = window.onkeydown = (e) => {
+        if (e.key == "Escape") {
+            console.log('clicking escape')
+            if (escapeImg && selectedImg.classList.contains('enlarge')) {
+                selectedImg.classList.remove('dimHeadshot')
+                selectedImg.classList.remove('enlarge')
+                console.log(selectedImg)
+                for (let i = 0;i < headShotsContainer.children.length;i++) {
+                    if (!headShotsContainer.children[i].classList.contains('enlarge')) {
+                        headShotsContainer.children[i].classList.remove('dimHeadshot')
+                        headShotsContainer.style.overflow = "scroll"
+                        selectedImg.classList.remove('dimHeadshot')
+                    }
+                }
+            }
+        }
     }
-
 
 
     hambMenu.addEventListener('click', function () {

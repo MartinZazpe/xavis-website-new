@@ -493,7 +493,10 @@ footer {
 
 @media (min-width: 992px) {
 
+
+
     #title-container {
+        margin-top: 20px;
         width: 100%;
         font-size: 1.5rem;
     }
@@ -581,9 +584,6 @@ footer {
 @media (min-width: 1200px) {
 
 
-    #title-container {
-        margin-top: 20px;
-    }
 
     #desktop-landing-images {
         width: 100%;

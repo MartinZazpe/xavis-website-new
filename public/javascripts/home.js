@@ -22,6 +22,9 @@ window.addEventListener("load", function () {
 
 
 
+    const name = document.querySelector('#name').onclick = () => {
+        location.href = "home.ejs"
+    }
 
 
     hambMenu.addEventListener('click', function () {

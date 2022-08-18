@@ -15,11 +15,12 @@ module.exports = {
     headshots: (req, res) => {
 
         res.render('headshots')
+    },
+
+
+    about: (req, res) => {
+
     }
-
-
-
-
 
 
 

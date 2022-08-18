@@ -43,3 +43,8 @@ a {
 .zindex3 {
   z-index: 3;
 }
+
+
+#name:hover {
+  cursor: pointer;
+}
