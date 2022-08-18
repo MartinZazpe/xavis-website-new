@@ -1,6 +1,5 @@
 window.addEventListener("load", function () {
 
-    console.log('Home JS working')
 
     const hambMenuContainer = document.getElementById('hambmenu-container')
     const hambMenu = document.getElementById('hamburguer-menu')
@@ -51,7 +50,7 @@ window.addEventListener("load", function () {
             bar1Nav.classList.toggle('transformToX1')
             bar2Nav.classList.toggle('noDisplay')
             bar3Nav.classList.toggle('transformToX2')
-            hambMenu.style.display = "inherit"
+            hambMenu.style.display = "initial"
         }
     })
 
@@ -60,7 +59,7 @@ window.addEventListener("load", function () {
         headShotJump.classList.remove('headShotJumpTransition')
         lateralNavbar.classList.remove('appearVisible')
         footer.classList.remove('footerTransition')
-        hambMenu.style.display = "inherit"
+        hambMenu.style.display = "initial"
         bar1Nav.classList.remove('transformToX1')
         bar2Nav.classList.remove('noDisplay')
         bar3Nav.classList.remove('transformToX2')

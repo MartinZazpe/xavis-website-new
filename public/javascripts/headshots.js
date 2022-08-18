@@ -1,6 +1,5 @@
 window.addEventListener("load", function () {
 
-    console.log('headshots JS working')
 
     const hambMenuContainer = document.getElementById('hambmenu-container')
     const hambMenu = document.getElementById('hamburguer-menu')
@@ -22,26 +21,7 @@ window.addEventListener("load", function () {
     const bar3Nav = document.querySelector('#hamburguer-menu-navbar .bar3-nav')
 
 
-    // var activeImg
-    // Array.from(headShotsContainer.children).forEach((child, index) => {
-    //     child.onclick = () => {
-    //         console.log(headShotsContainer.children[index])
-    //         headShotsContainer.children[index].classList.toggle('enlarge')
-    //         for (theRest of headShotsContainer.children) {
-    //             if (theRest.classList.contains('enlarge')) {
-    //                 theRest.scrollIntoView({ block: "center", behavior: "smooth" })
-    //                 activeImg = theRest
-    //                 console.log(activeImg)
-    //             }
-    //             if (activeImg.classList.contains('enlarge') && !theRest.classList.contains('enlarge')) {
-    //                 theRest.classList.add('dimHeadshot')
-    //             }
-    //             else if (!theRest.classList.contains('enlarge')) {
-    //                 theRest.classList.remove('dimHeadshot')
-    //             }
-    //         }
-    //     }
-    // })
+
 
     let selectedImg
     Array.from(headShotsContainer.children).forEach((child, index) => {
@@ -70,20 +50,6 @@ window.addEventListener("load", function () {
             }
         }
     })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -137,18 +103,5 @@ window.addEventListener("load", function () {
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 })
-
 

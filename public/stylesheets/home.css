@@ -59,7 +59,7 @@ header {
 .hambmenu-container {
     width: 50%;
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
 }
 
 .title-major-container {
@@ -69,8 +69,9 @@ header {
 }
 
 .hambmenu-container {
-    justify-content: flex-end;
+    justify-content: center;
     padding-right: 10px;
+    align-items: flex-end;
 }
 
 
@@ -170,7 +171,7 @@ r #hamburguer-menu {
     height: 50px;
     border-radius: 10px;
     opacity: 1;
-    transition: 1s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .clicked {
@@ -201,7 +202,7 @@ footer {
     background-color: transparent;
     opacity: 1;
     visibility: visible;
-    transition: visibility 1s linear, opacity 1s linear;
+    transition: visibility 0.3s linear, opacity 0.3s linear;
 }
 
 
