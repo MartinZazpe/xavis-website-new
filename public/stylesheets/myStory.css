@@ -1,0 +1,19 @@
+.title-major-container {
+    justify-content: flex-start;
+}
+
+#myStoryContainer {
+    height: 90%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+#myStoryContainer img {
+    width: 320px;
+}
+
+#myStoryContainer p {
+    padding: 10px;
+    color: white;
+}

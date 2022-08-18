@@ -10,5 +10,6 @@ router.get('/headshots', indexController.headshots)
 
 router.get('/myResume', indexController.myResume)
 
+router.get('/myStory', indexController.myStory)
 
 module.exports = router

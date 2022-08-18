@@ -21,6 +21,9 @@ module.exports = {
         res.sendfile('./public/images/resume/XaviResume.pdf')
     },
 
+    myStory: (req, res) => {
+        res.render('my-story')
+    }
 
 
 
