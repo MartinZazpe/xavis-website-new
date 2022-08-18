@@ -1,4 +1,5 @@
 
+fs = require('fs')
 
 module.exports = {
 
@@ -10,17 +11,16 @@ module.exports = {
 
     },
 
-
-
     headshots: (req, res) => {
 
         res.render('headshots')
     },
 
 
-    about: (req, res) => {
+    myResume: (req, res) => {
+        res.sendfile('./public/images/resume/XaviResume.pdf')
+    },
 
-    }
 
 
 

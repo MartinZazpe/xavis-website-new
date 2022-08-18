@@ -8,8 +8,7 @@ router.get('/', indexController.home)
 
 router.get('/headshots', indexController.headshots)
 
-
-
+router.get('/myResume', indexController.myResume)
 
 
 module.exports = router

@@ -66,11 +66,9 @@ window.addEventListener("load", function () {
 
     let escapeImg = window.onkeydown = (e) => {
         if (e.key == "Escape") {
-            console.log('clicking escape')
             if (escapeImg && selectedImg.classList.contains('enlarge')) {
                 selectedImg.classList.remove('dimHeadshot')
                 selectedImg.classList.remove('enlarge')
-                console.log(selectedImg)
                 for (let i = 0;i < headShotsContainer.children.length;i++) {
                     if (!headShotsContainer.children[i].classList.contains('enlarge')) {
                         headShotsContainer.children[i].classList.remove('dimHeadshot')

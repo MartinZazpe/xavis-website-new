@@ -16,12 +16,20 @@ body {
     position: relative;
 }
 
-
+a {
+    text-decoration: none !important;
+    width: 100%;
+    z-index: 10;
+}
 
 #hambmenu-container-navbar {
     display: none;
 }
 
+
+#lateral-menu-navbar ul a li {
+    color: #ffffff
+}
 
 #background-image {
     margin: 0;
