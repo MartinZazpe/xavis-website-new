@@ -82,36 +82,32 @@ window.addEventListener("load", function () {
 
 
     hambMenu.addEventListener('click', function () {
-        hambMenu.style.display = "none"
-        lateralNavbar.classList.add('active')
+        lateralNavbar.classList.toggle('active')
         if (lateralNavbar.classList.contains('active')) {
+            lateralNavbar.classList.toggle('appearVisible')
+            lateralMenuNavbar.classList.toggle('noDisplay')
+            lateralMenuLinks.classList.toggle('noDisplay')
             lateralNavbar.style.display = "initial"
-
-            // footer.classList.toggle('footerTransition')
-            lateralNavbar.classList.toggle('appearVisible')
-            lateralMenuNavbar.classList.toggle('noDisplay')
-            lateralMenuLinks.classList.toggle('noDisplay')
+            footer.classList.toggle('footerTransition')
             socialLinks.classList.toggle('w50')
-            bar1Nav.classList.toggle('transformToX1')
-            bar2Nav.classList.toggle('noDisplay')
-            bar3Nav.classList.toggle('transformToX2')
-        }
-        hambMenuNav.onclick = () => {
+            bar1.classList.toggle('transformToX1')
+            bar2.classList.toggle('noDisplay')
+            bar3.classList.toggle('transformToX2')
+        } else {
             lateralNavbar.style.display = "none"
-            // footer.classList.toggle('footerTransition')
+            footer.classList.toggle('footerTransition')
             lateralNavbar.classList.toggle('appearVisible')
             lateralMenuNavbar.classList.toggle('noDisplay')
             lateralMenuLinks.classList.toggle('noDisplay')
             socialLinks.classList.toggle('w50')
-            bar1Nav.classList.toggle('transformToX1')
-            bar2Nav.classList.toggle('noDisplay')
-            bar3Nav.classList.toggle('transformToX2')
+            bar1.classList.toggle('transformToX1')
+            bar2.classList.toggle('noDisplay')
+            bar3.classList.toggle('transformToX2')
             hambMenu.style.display = "inherit"
         }
     })
 
     window.onresize = () => {
-        headShotJump.classList.remove('headShotJumpTransition')
         lateralNavbar.classList.remove('appearVisible')
         footer.classList.remove('footerTransition')
         hambMenu.style.display = "inherit"

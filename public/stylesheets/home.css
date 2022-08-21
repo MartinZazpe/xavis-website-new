@@ -96,7 +96,7 @@ header {
     padding-top: 10px;
 }
 
-r #hamburguer-menu {
+#hamburguer-menu {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -174,6 +174,7 @@ r #hamburguer-menu {
 
 
 #headshots-jump-container {
+    z-index: 4;
     background-color: #111d11;
     width: 250px;
     height: 50px;
@@ -293,13 +294,6 @@ footer {
 }
 
 
-#lateral-menu-navbar {
-    height: 50%;
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-}
 
 #lateral-menu-navbar ul {
     /* margin: 0px 30px; */

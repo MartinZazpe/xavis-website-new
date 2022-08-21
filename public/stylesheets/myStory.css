@@ -1,19 +1,34 @@
-.title-major-container {
-    justify-content: flex-start;
+/* applied fixes for smaller devices, upon 360 is a bit more normal.. */
+@media (min-width:360px) {
+
+    #myStoryContainer {
+        font-size: 16px;
+    }
+
+    #myStoryContainer img {
+        width: 250px;
+    }
 }
 
-#myStoryContainer {
-    height: 90%;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-}
 
-#myStoryContainer img {
-    width: 320px;
-}
 
-#myStoryContainer p {
-    padding: 10px;
-    color: white;
+
+@media (min-width:600px) {
+
+
+    #right-container {
+        align-items: flex-start;
+    }
+
+    #myStoryContainer img {
+        width: 350px;
+        height: auto;
+    }
+
+    #myStoryContainer p {
+        color: black;
+        font-size: 18px;
+    }
+
+
 }
