@@ -12,13 +12,13 @@ window.addEventListener("load", function () {
     const bar2 = document.querySelector('#hamburguer-menu .bar2')
     const bar3 = document.querySelector('#hamburguer-menu .bar3')
     const noDisplay = document.getElementsByClassName('noDisplay')
-    var headShotsContainer = document.getElementById('headshots-container')
+    const headShotsContainer = document.getElementById('headshots-container')
 
 
-    const hambMenuNav = document.getElementById('hamburguer-menu-navbar')
-    const bar1Nav = document.querySelector('#hamburguer-menu-navbar .bar1-nav')
-    const bar2Nav = document.querySelector('#hamburguer-menu-navbar .bar2-nav')
-    const bar3Nav = document.querySelector('#hamburguer-menu-navbar .bar3-nav')
+    // const hambMenuNav = document.getElementById('hamburguer-menu-navbar')
+    // const bar1Nav = document.querySelector('#hamburguer-menu-navbar .bar1-nav')
+    // const bar2Nav = document.querySelector('#hamburguer-menu-navbar .bar2-nav')
+    // const bar3Nav = document.querySelector('#hamburguer-menu-navbar .bar3-nav')
 
     const name = document.querySelector('#name').onclick = () => {
         location.href = "/"
@@ -26,9 +26,7 @@ window.addEventListener("load", function () {
 
 
 
-    let selectedImg
-
-
+    let selectedImg = ""
 
     Array.from(headShotsContainer.children).forEach((child, index) => {
 
