@@ -119,6 +119,8 @@ footer {
         display: none !important;
     }
 
+
+
     footer {
         position: fixed;
         flex-flow: row wrap;
@@ -137,10 +139,16 @@ footer {
         align-items: center !important;
     }
 
+    .social-links>a i {
+        font-size: 1.7em;
+    }
+
     #copyright {
         display: flex;
         align-items: center;
+        justify-content: center;
         height: 100%;
+        width: 50%;
     }
 
     #left-container {
@@ -238,6 +246,11 @@ footer {
 }
 
 
+@media(min-width:1000px) and (max-height:800px) {
+    #right-container {
+        height: 65vh !important;
+    }
+}
 
 @media (min-width: 992px) {
 
