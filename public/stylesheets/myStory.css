@@ -1,3 +1,22 @@
+#myStoryContainer {
+    padding-top: 10px;
+    font-size: 13px;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#myStoryContainer img {
+    width: 150px;
+}
+
+#myStoryContainer p {
+    padding: 10px;
+    color: white;
+}
+
+
 /* applied fixes for smaller devices, upon 360 is a bit more normal.. */
 @media (min-width:360px) {
 
@@ -30,5 +49,24 @@
         font-size: 18px;
     }
 
+
+}
+
+@media(min-width:992px) {
+
+    #myStoryContainer img {
+        width: 300px;
+        height: auto;
+    }
+
+    #myStoryContainer {
+        flex-flow: column;
+        justify-content: center;
+
+    }
+
+    #myStoryContainer>* {
+        width: 80%;
+    }
 
 }
