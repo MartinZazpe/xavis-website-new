@@ -60,6 +60,7 @@ window.addEventListener('load', () => {
     window.onresize = () => {
         headShotJump.classList.remove('headShotJumpTransition')
         lateralNavbar.classList.remove('appearVisible')
+           lateralNavbar.classList.remove('active')
         footer.classList.remove('footerTransition')
         hambMenu.style.display = "inherit"
         bar1Nav.classList.remove('transformToX1')

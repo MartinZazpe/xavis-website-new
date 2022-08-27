@@ -108,10 +108,12 @@ window.addEventListener("load", function () {
     window.onresize = () => {
         lateralNavbar.classList.remove('appearVisible')
         footer.classList.remove('footerTransition')
+           lateralNavbar.classList.remove('active')
+           bar1.classList.remove('transformToX1')
+          bar2.classList.remove('noDisplay')
+         bar3.classList.remove('transformToX2')
         hambMenu.style.display = "inherit"
-        bar1Nav.classList.remove('transformToX1')
-        bar2Nav.classList.remove('noDisplay')
-        bar3Nav.classList.remove('transformToX2')
+
     }
 
 
