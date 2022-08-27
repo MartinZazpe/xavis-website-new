@@ -18,7 +18,8 @@ module.exports = {
 
 
     myResume: (req, res) => {
-        res.sendfile('./public/images/resume/XaviResume.pdf')
+        // res.sendfile('./public/images/resume/XaviResume.pdf')
+        res.render('resume')
     },
 
     myStory: (req, res) => {
