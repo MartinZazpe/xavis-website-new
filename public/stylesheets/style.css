@@ -529,7 +529,7 @@ footer {
     color: black;
     list-style-type: none;
     padding: 10px;
-    margin: 15px 0px;
+    /* margin: 15px 0px; */
   }
 
   #navbar-tablet a li:hover {
@@ -574,9 +574,11 @@ footer {
     width: 100%;
   }
 
-  #social-links {
+  .social-links {
     width: 100%;
-    justify-content: space-evenly !important;
+    /* justify-content: space-evenly !important; */
+    justify-content:center !important
+
   }
 
   body {
@@ -593,14 +595,14 @@ footer {
   }
 
   #navbar-tablet a {
-    width: 200px;
+    width: 120px;
   }
 
   #main-section {
     height: 70%;
     width: 100vw;
     flex-flow: column wrap;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     scroll-behavior: smooth;
   }
 
