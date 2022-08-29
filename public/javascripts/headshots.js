@@ -13,6 +13,7 @@ window.addEventListener("load", function () {
     const bar3 = document.querySelector('#hamburguer-menu .bar3')
     const noDisplay = document.getElementsByClassName('noDisplay')
     const headShotsContainer = document.getElementById('headshots-container')
+    const copyright = document.getElementById('copyright')
 
 
     // const hambMenuNav = document.getElementById('hamburguer-menu-navbar')
@@ -82,6 +83,7 @@ window.addEventListener("load", function () {
     hambMenu.addEventListener('click', function () {
         lateralNavbar.classList.toggle('active')
         if (lateralNavbar.classList.contains('active')) {
+            copyright.style.display = "initial"
             lateralNavbar.classList.toggle('appearVisible')
             lateralMenuNavbar.classList.toggle('noDisplay')
             lateralMenuLinks.classList.toggle('noDisplay')
@@ -93,6 +95,7 @@ window.addEventListener("load", function () {
             bar3.classList.toggle('transformToX2')
         } else {
             lateralNavbar.style.display = "none"
+            copyright.style.display = "none"
             footer.classList.toggle('footerTransition')
             lateralNavbar.classList.toggle('appearVisible')
             lateralMenuNavbar.classList.toggle('noDisplay')
@@ -106,12 +109,13 @@ window.addEventListener("load", function () {
     })
 
     window.onresize = () => {
+        copyright.style.display = "none"
         lateralNavbar.classList.remove('appearVisible')
         footer.classList.remove('footerTransition')
-           lateralNavbar.classList.remove('active')
-           bar1.classList.remove('transformToX1')
-          bar2.classList.remove('noDisplay')
-         bar3.classList.remove('transformToX2')
+        lateralNavbar.classList.remove('active')
+        bar1.classList.remove('transformToX1')
+        bar2.classList.remove('noDisplay')
+        bar3.classList.remove('transformToX2')
         hambMenu.style.display = "inherit"
 
     }

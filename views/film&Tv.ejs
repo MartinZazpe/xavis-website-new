@@ -1,9 +1,9 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
     <title>
-        The Resume
+        Film and Tv
     </title>
 
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
@@ -11,9 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital@1&family=Montserrat:ital,wght@0,100;0,400;0,600;0,700;0,800;1,100;1,600;1,700&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='/stylesheets/style.css' />
-    <link rel='stylesheet' href='/stylesheets/resume.css' />
+    <!-- <link rel='stylesheet' href='/stylesheets/headshots.css' /> -->
+    <link rel="stylesheet" href='/stylesheets/films-tv.css'>
     <script src="https://kit.fontawesome.com/d4fe87d88c.js" crossorigin="anonymous"></script>
-    <script src="../javascripts/myStory.js"></script>
+    <script src="../javascripts/films-tv.js"></script>
 </head>
 
 
@@ -26,32 +27,27 @@
 
 
 
-
     <section id="main-section">
         <div id="lateral-navbar" style="display:none">
             <div class="Lateral-nav-container">
-                <div class="hambmenu-container-navbar">
-                    <div id="hamburguer-menu-navbar">
-                        <span class="bar1-nav"></span>
-                        <span class="bar2-nav"></span>
-                        <span class="bar3-nav"></span>
-                    </div>
+                <div id="emptyDiv">
+
                 </div>
                 <div id="lateral-menu-navbar" class="noDisplay">
                     <ul class="white-color">
                         <a a href="/headshots">
                             <li class="lateral-headshots-link">My headshots !</li>
                         </a>
-                        <a href="">
+                        <a href="/myStory">
                             <li>My story</li>
                         </a>
-                        <a href="">
+                        <a href="/film&Tv">
                             <li>Film & TV</li>
                         </a>
                         <a href="/myResume" target="_blank">
                             <li>Resume</li>
                         </a>
-                        <a href="#">
+                        <a href="/contact">
                             <li>Let's talk</li>
                         </a>
 
@@ -77,21 +73,21 @@
                 <div class="title-major-container">
                     <div id="title-container">
                         <div id="name" class="white-color font22"><span class="bold-text">Xavier</span> Rivera-Hurtado</div>
-                        <div id="labor-union" class=" white-color italic">My story</div>
+                        <div id="labor-union" class=" white-color italic">Film & Tv</div>
                         <ul id="navbar-tablet" class="noDisplay">
                             <a href="/headshots">
                                 <li>My headshots!</li>
                             </a>
-                            <a href="#">
+                            <a href="/myStory">
                                 <li>My story</li>
                             </a>
-                            <a href="#">
+                            <a href="/film&Tv">
                                 <li>Film & TV</li>
                             </a>
                             <a href="/myResume" target="_blank">
                                 <li>Resume</li>
                             </a>
-                            <a href="#">
+                            <a href="/contact">
                                 <li>Let's talk</li>
                             </a>
                         </ul>
@@ -116,9 +112,34 @@
 
         <div id="right-container">
 
-        <embed  id="pdf-preview" src="../images/resume/XaviResume.pdf" type="application/pdf"></embed>
-            
-            <!-- <iframe id="pdf-preview" src="https://docs.google.com/viewer?url=https://drive.google.com/file/d/1ktz4c-F_b3X3N5-ylbEI224HAQInYheI/view?usp=sharing" alt="pdf-resume" width="100%" height="100%" > -->
+            <div id="title">
+                <p>Click any project for more information</p>
+            </div>
+
+
+            <div id="works-container">
+                <div id="main-project">
+                    <div>
+                        <img id="gorditaChroniclesImg" src="../images/works/gorditaPicture.png" alt="gordita-chronicles-image">
+                        <p class="work-description">Co-starring...Lorem Ipsum lorem Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        <video id="gorditaChroniclesVid" class="noDisplay" poster="placeholder.png" controls playsinline muted preload="auto" codecs="vp8.0, vorbis">
+                            <source src="../images/works/gorditaChronicles.mp4" type='video/mp4'>
+                            Your browser does not support HTML5 video.
+                        </video>
+                    </div>
+                </div>
+                <div id="other-projects">
+                    <div class="project"></div>
+                    <div class="project"></div>
+                    <div class="project"></div>
+                    <div class="project"></div>
+                </div>
+
+            </div>
+
+
+
+
 
         </div>
 
@@ -126,7 +147,7 @@
             <div class="social-links text-center">
                 <a href="https://www.instagram.com/xavisays93/" target="_blank"><i class="fa-brands fa-xl fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/xavier-rivera-hurtado/" target="_blank"><i class="fa-brands fa-xl fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-xl fa-twitter"></i></a>
+                <a href="http://twitter.com/actorxavisays"><i class="fa-brands fa-xl fa-twitter"></i></a>
                 <a href="mailto:xavier.actor93@gmail.com?subject=Hi Xavier, let´s get in touch!" target="_blank"><i class="fa-solid fa-xl fa-envelope"></i></a>
             </div>
             <div id="copyright" class="white-color">© 2022 Desiged & built by Martin Zazpe</div>
@@ -137,4 +158,4 @@
 
 </body>
 
-</html> -->
+</html>

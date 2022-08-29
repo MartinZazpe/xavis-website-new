@@ -14,6 +14,10 @@ window.addEventListener('load', () => {
     const noDisplay = document.getElementsByClassName('noDisplay')
     var headShotsContainer = document.getElementById('headshots-container')
     const copyright = document.getElementById('copyright')
+    const gorditaChroniclesImg = document.getElementById('gorditaChroniclesImg')
+    const gorditaChroniclesVid = document.getElementById("gorditaChroniclesVid")
+    const workDescription = document.querySelector('.work-description')
+
 
 
     const hambMenuNav = document.getElementById('hamburguer-menu-navbar')
@@ -55,6 +59,19 @@ window.addEventListener('load', () => {
         }
     })
 
+
+    gorditaChroniclesImg.onclick = () => {
+        console.log('ive been clicked')
+        workDescription.style.display = "none"
+        gorditaChroniclesImg.style.display = "none"
+        gorditaChroniclesVid.style.display = "initial"
+    }
+
+
+
+
+
+
     window.onresize = () => {
         copyright.style.display = "none"
         lateralNavbar.classList.remove('appearVisible')
@@ -65,6 +82,8 @@ window.addEventListener('load', () => {
         bar3.classList.remove('transformToX2')
         hambMenu.style.display = "inherit"
     }
+
+
 
 
 
