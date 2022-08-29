@@ -47,7 +47,7 @@ footer {
 
 #main-project {
     width: 100%;
-    max-height: 40%;
+    max-height: 45%;
 }
 
 
@@ -65,7 +65,7 @@ footer {
 
 #gorditaChroniclesImg {
     width: auto;
-    max-width: 60%;
+    max-width: auto;
     height: 100%;
     position: relative;
 }
@@ -86,7 +86,7 @@ footer {
     margin: 0px;
     padding: 5px;
     display: inline;
-    max-width: 40%;
+    max-width: 30%;
     height: 100%;
 }
 
@@ -96,10 +96,14 @@ footer {
     border-radius: 9px;
 }
 
-#main-project {
-    overflow: hidden;
+
+.work-description {
+    line-height: 2;
 }
 
+.work-description span {
+    font-weight: 600;
+}
 
 
 
@@ -118,9 +122,18 @@ footer {
     margin: 0px 10px;
     flex-shrink: 0;
     width: 300px !important;
-    height: 80%;
+    height: 75%;
 }
 
+.project p {
+    margin: 0;
+    text-align: center;
+    font-weight: 600;
+}
+
+#project-vid {
+    width: 100%;
+}
 
 
 
