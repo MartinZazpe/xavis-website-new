@@ -7,6 +7,8 @@
 } */
 
 
+
+
 footer {
     display: flex;
     flex-flow: column;
@@ -92,7 +94,7 @@ footer {
 
 #main-project,
 .project {
-    background-color: #D9D9D9;
+    background-color: #eae8e8;
     border-radius: 9px;
 }
 
@@ -148,9 +150,12 @@ footer {
 
 @media (min-width:600px) {
 
+    #title {
+        color: black;
+    }
 
     footer {
-        height: 10vh;
+        height: auto;
         background-color: white;
         display: flex;
         flex-flow: column wrap;
@@ -163,11 +168,9 @@ footer {
 
     .social-links {
         height: 40px;
+        justify-content: space-evenly;
     }
 
-    #copyright {
-        color: black;
-    }
 
     #left-container {
         height: 20vh;
@@ -176,7 +179,33 @@ footer {
     #right-container {
         height: 75vh;
         align-items: flex-start;
+        flex-flow: column;
     }
+
+
+    #main-project {
+        align-self: center;
+        width: 60%;
+        max-height: 50%;
+    }
+
+    #main-project,
+    .project {
+        background-color: #eae8e8;
+        border-radius: 9px;
+    }
+
+    #other-projects {
+        height: 50%;
+    }
+
+
+    #gorditaChroniclesImg {
+        width: auto;
+        max-height: 100%;
+        height: auto;
+    }
+
 
 }
 
@@ -186,6 +215,10 @@ footer {
     #main-section {
         height: 100vh;
     }
+
+
+
+
 
 }
 

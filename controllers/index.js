@@ -18,7 +18,7 @@ module.exports = {
 
 
     myResume: (req, res) => {
-        res.sendfile('./public/images/resume/XaviResume.pdf')
+        res.sendFile(__dirname + '/images/resume/XaviResume.pdf')
         // res.render('resume')
     },
 

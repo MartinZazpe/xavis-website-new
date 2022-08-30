@@ -108,7 +108,7 @@ footer {
 
 
     footer {
-        height: 10vh;
+        height: auto;
         background-color: white;
         display: flex;
         flex-flow: column wrap;
@@ -136,6 +136,7 @@ footer {
 
     .social-links {
         height: 40px;
+        justify-content: space-evenly;
     }
 
     #copyright {

@@ -8,6 +8,12 @@
  }
  */
 
+ #headshots-text {
+     text-align: center;
+     color: white;
+     font-weight: 300;
+ }
+
 
  footer {
      display: flex;
@@ -206,6 +212,7 @@
      }
 
      footer {
+         height: auto;
          display: flex;
          flex-flow: column wrap;
          /* justify-content: space-evenly; */
