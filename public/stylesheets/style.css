@@ -4,7 +4,7 @@
 
 body {
   /* padding: 50px; */
-  font: 14px;
+  font: 16px;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -50,6 +50,9 @@ a {
   z-index: 3;
 }
 
+p {
+  color: #666
+}
 
 #name:hover {
   cursor: pointer;
@@ -109,7 +112,7 @@ body {
 #background-image {
   margin: 0;
   position: absolute;
-  background: linear-gradient(#000902, #4d935e);
+  /* background: linear-gradient(#000902, #4d935e); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
@@ -118,6 +121,10 @@ body {
   visibility: visible;
   opacity: 1;
 }
+
+
+
+
 
 
 #main-section {
@@ -155,6 +162,7 @@ header {
   width: 80%;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   /* justify-content: center; */
 }
 
@@ -163,6 +171,8 @@ header {
   padding: 30px 10px;
   display: flex;
   flex-flow: column wrap;
+  white-space: nowrap;
+  color: #625e5e;
 }
 
 #title-container #labor-union {
@@ -198,8 +208,8 @@ header {
   padding: 2px;
   margin: 4px;
   border-radius: 3px;
-  width: 50px;
-  height: 3px;
+  width: 40px;
+  height: 2.5px;
   background-color: #e7e1e1;
   transition: transform 0.3s linear;
 }
@@ -258,14 +268,14 @@ footer {
   align-items: center;
   height: 40px;
   width: 50%;
-  background: linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
-  background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+  /* background: linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)); */
+  /* background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)); */
   transition: width 0.5s linear;
   border-radius: 6px;
 }
 
 .social-links>a i {
-  color: rgb(8, 5, 5);
+  color: #CCC1C1;
   padding: 0px 5px;
   display: inline;
 }
@@ -325,6 +335,13 @@ footer {
   align-items: center;
 }
 
+.social-links i {
+  color: #CCC1C1
+}
+
+#copyright {
+  padding: 0px 10px;
+}
 
 #emptyDiv {
   width: 100%;

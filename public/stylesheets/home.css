@@ -9,8 +9,22 @@
     position: relative;
 } */
 
+
+.title-major-container {
+    justify-content: center;
+}
+
+#title-container {
+    color: #CCC1C1
+}
+
+
 .social-links {
     border-radius: 0px;
+}
+
+.social-links a i {
+    color: #dbd8d8 !important;
 }
 
 #hambmenu-container-navbar {

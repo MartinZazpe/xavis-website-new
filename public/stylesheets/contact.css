@@ -11,6 +11,10 @@
     opacity: 0.8;
 }
 
+#title-container {
+    color: #CCC1C1
+}
+
 #right-container {
     display: flex;
     justify-content: center;
