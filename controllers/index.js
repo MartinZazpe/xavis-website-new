@@ -18,8 +18,12 @@ module.exports = {
 
 
     myResume: (req, res) => {
-        res.sendFile(__dirname + '/images/resume/XaviResume.pdf')
-        // res.render('resume')
+        res.render('resume')
+    },
+
+    myResumeDownload: (req, res) => {
+        file = 'public/images/resume/XaviResume.pdf'
+        res.download(file)
     },
 
     myStory: (req, res) => {

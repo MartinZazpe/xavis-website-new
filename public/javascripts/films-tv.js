@@ -60,12 +60,11 @@ window.addEventListener('load', () => {
     })
 
 
-    gorditaChroniclesImg.onclick = () => {
-        console.log('ive been clicked')
-        workDescription.style.display = "none"
-        gorditaChroniclesImg.style.display = "none"
-        gorditaChroniclesVid.style.display = "initial"
-    }
+    // gorditaChroniclesImg.onclick = () => {
+    //     workDescription.style.display = "none"
+    //     gorditaChroniclesImg.style.display = "none"
+    //     gorditaChroniclesVid.style.display = "initial"
+    // }
 
 
 

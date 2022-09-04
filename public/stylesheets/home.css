@@ -9,6 +9,9 @@
     position: relative;
 } */
 
+#right-container {
+    height: calc(85vh - 100px)
+}
 
 .title-major-container {
     justify-content: center;
@@ -23,9 +26,6 @@
     border-radius: 0px;
 }
 
-.social-links a i {
-    color: #dbd8d8 !important;
-}
 
 #hambmenu-container-navbar {
     display: none;
@@ -48,6 +48,11 @@
     opacity: 1;
 }
 
+
+#labor-union {
+    border: none;
+    justify-content: flex-start;
+}
 
 
 .title-major-container,
@@ -77,7 +82,7 @@
 
 #main-content {
     display: Flex;
-    height: calc(100vh - 250px);
+    height: 100%;
     flex-flow: column wrap;
     justify-content: flex-end;
     align-items: center;
@@ -136,6 +141,10 @@ footer {
 
 @media (min-width:600px) {
 
+
+    #labor-union {
+        display: none;
+    }
 
 
     .social-links-tablet {

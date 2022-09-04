@@ -1,15 +1,35 @@
 /* current bugs :  firefox on mobiles navbar is glitchy */
 
 
-
 body {
-  /* padding: 50px; */
   font: 16px;
   font-family: 'Montserrat', sans-serif;
 }
 
+#left-container {
+  position: relative;
+}
+
+#labor-union {
+  position: absolute;
+  bottom: 5%;
+  color: white;
+  text-align: center;
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+  font-size: 20px;
+  border-top: 1px solid #7e7373;
+  border-right: 1px solid #7e7373;
+  border-bottom: 1px solid #7e7373;
+  border-radius: 0px 6px 6px 0px;
+  z-index: 11;
+  padding: 0px 10px;
+  transition: 1s ease-in-out;
+}
+
 a {
-  /* color: #00B7FF; */
   text-decoration: none;
   z-index: 10;
 }
@@ -112,7 +132,7 @@ body {
 #background-image {
   margin: 0;
   position: absolute;
-  /* background: linear-gradient(#000902, #4d935e); */
+  background: linear-gradient(#000902, #4d935e);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
@@ -137,13 +157,13 @@ body {
 
 
 #right-container {
-  height: 80vh;
+  height: calc(85vh - 40px);
   width: 100%;
 }
 
 #left-container {
   width: 100%;
-  height: 20vh;
+  height: 15vh;
 }
 
 
@@ -151,19 +171,34 @@ body {
 
 
 header {
-  height: 150px;
   display: flex;
   flex-flow: column row;
   justify-content: space-between;
+  /* background-color: rgba(52, 134, 79, 0.4); */
 }
 
+/* 
+#view-title {
+  height: 10%;
+  width: 100%;
+  text-align: center;
+  color: #e7e0e0;
+  margin: 0px !important;
+  background-color: #4d935e;
+  border-bottom: 2px solid black;
+} */
 
 .title-major-container {
   width: 80%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  position: relative;
   /* justify-content: center; */
+}
+
+#labor-union {
+  position: absolute;
 }
 
 
@@ -172,7 +207,7 @@ header {
   display: flex;
   flex-flow: column wrap;
   white-space: nowrap;
-  color: #625e5e;
+  color: #e7e0e0;
 }
 
 #title-container #labor-union {
@@ -183,6 +218,7 @@ header {
   width: 20%;
   display: flex;
   flex-wrap: wrap;
+  z-index: 100;
 }
 
 
@@ -269,16 +305,17 @@ footer {
   height: 40px;
   width: 50%;
   /* background: linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)); */
-  /* background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)); */
+  background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5));
   transition: width 0.5s linear;
   border-radius: 6px;
 }
 
 .social-links>a i {
-  color: #CCC1C1;
+  color: #eae5e5;
   padding: 0px 5px;
   display: inline;
 }
+
 
 
 #copyright {
@@ -291,10 +328,10 @@ footer {
 #lateral-navbar {
   height: 100vh;
   width: 70%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.85);
   /* opacity: 50%; */
   position: absolute;
-  z-index: 3;
+  z-index: 20;
   bottom: 0;
   right: 0;
   visibility: hidden;
@@ -336,7 +373,7 @@ footer {
 }
 
 .social-links i {
-  color: #CCC1C1
+  color: #eae5e5
 }
 
 #copyright {
@@ -400,21 +437,32 @@ footer {
 }
 
 
-/* @-moz-document {
 
-  #hamburguer-menu .bar1,
-  .bar2,
-  .bar3,
-  #lateral-navbar {
-    transition: none !important;
-  }
-} */
 
 
 
 @media(max-width:599px) and (orientation: landscape) {}
 
 @media (min-width:600px) {
+
+
+  body {
+    font-size: 18px;
+  }
+
+  #labor-union {
+    font-size: 26px;
+  }
+
+  /*
+  #right-container {
+    overflow: hidden;
+  } */
+
+  #labor-union {
+    color: black;
+    bottom: 10%;
+  }
 
   #copyright {
     display: initial !important;
@@ -425,9 +473,9 @@ footer {
     width: 80%;
   }
 
-  .social-links-tablet {
+  /* .social-links-tablet {
     font-size: 1.3em;
-  }
+  } */
 
   .social-links-tablet:hover {
     cursor: pointer !important;
@@ -483,7 +531,7 @@ footer {
 
   #left-container {
     width: 100%;
-    height: 25vh;
+    /* height: 25vh; */
     display: flex;
     flex-flow: column wrap;
     position: relative;
@@ -520,6 +568,7 @@ footer {
     width: 100%;
     height: 100%;
     display: flex;
+    background: none;
   }
 
   .social-links a i {
@@ -572,7 +621,7 @@ footer {
   header {
     width: 100%;
     text-align: center;
-    height: 500px;
+    height: 100%;
     display: flex;
     flex-flow: column wrap;
     align-items: center;

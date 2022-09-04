@@ -8,7 +8,11 @@ router.get('/', indexController.home)
 
 router.get('/headshots', indexController.headshots)
 
+/* resume view */
 router.get('/myResume', indexController.myResume)
+
+/*resume download */
+router.get('/resumeDownload', indexController.myResumeDownload)
 
 router.get('/myStory', indexController.myStory)
 

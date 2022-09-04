@@ -208,6 +208,22 @@
 
 
  @media (min-width:600px) {
+
+
+     #right-container {
+         flex-flow: column wrap;
+     }
+
+     #headshots-text {
+         height: 30px;
+         width: 100%;
+         text-align: center;
+     }
+
+     #headshots-container {
+         height: auto;
+     }
+
      #main-section {
          height: 100vh;
          width: 100vw;
