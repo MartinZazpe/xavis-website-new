@@ -221,7 +221,7 @@
      }
 
      #headshots-container {
-         height: auto;
+         height: calc(100% - 30px)
      }
 
      #main-section {
@@ -230,9 +230,9 @@
          overflow: hidden;
      }
 
-     #left-container {
+     /* #left-container {
          height: 20vh;
-     }
+     } */
 
      footer {
          height: auto;
@@ -244,7 +244,7 @@
 
      .social-links {
          height: 40px;
-         justify-content: space-evenly;
+         /* justify-content: space-evenly; */
      }
 
      .social-links:hover {

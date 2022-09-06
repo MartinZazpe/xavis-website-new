@@ -10,3 +10,29 @@
  #labor-union {
      width: 90%;
  }
+
+ #right-container object {
+     height: 750px;
+     width: 100%;
+ }
+
+
+ @media (min-width: 600px) {
+     #labor-union {
+         display: inherit;
+         position: absolute;
+         width: 20%;
+         bottom: -150px;
+         right: 0%;
+         margin: 5px 0px;
+         font-size: 18px;
+     }
+
+     footer {
+         display: flex;
+     }
+
+     .social-links {
+         height: 40px;
+     }
+ }

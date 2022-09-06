@@ -51,6 +51,7 @@ a {
 
     #contact-container {
         height: 500px;
+        background-color: rgba(192, 223, 190, 0.4);
     }
 
     footer {
@@ -62,7 +63,7 @@ a {
 
     .social-links {
         height: 40px;
-        justify-content: space-evenly;
+        justify-content: center;
     }
 }
 
@@ -70,5 +71,9 @@ a {
 @media (min-width:992px) {
     #main-section {
         height: 100vh;
+    }
+
+    #contact-container {
+        width: 50%;
     }
 }
