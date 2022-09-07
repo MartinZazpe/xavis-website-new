@@ -11,19 +11,142 @@
      width: 90%;
  }
 
+ /* 
  #right-container object {
      height: 750px;
      width: 100%;
  }
+ */
+
+
+ #right-container {
+     display: flex;
+     justify-content: center;
+ }
+
+
+ #pdf-content {
+     height: 95%;
+     width: 95%;
+     background-color: white;
+     display: flex;
+     align-self: center;
+     flex-flow: column;
+     align-items: center;
+     font-size: 9px;
+     padding: 20px 0px;
+     overflow: scroll;
+ }
+
+ #pdf-header {
+     width: 92%;
+     height: auto;
+     display: flex;
+     justify-content: space-between !important;
+     border-bottom: 1px solid black;
+ }
+
+ #title {
+     font-size: larger;
+     margin-top: 10px;
+     font-weight: 600;
+ }
+
+ .headerText {
+     text-decoration: underline;
+ }
+
+ .leftHeaderText {
+     font-weight: 550
+ }
+
+
+ .type-of-work {
+     font-size: 11px;
+     margin-top: 10px;
+     font-weight: 600;
+ }
+
+ #pdf-body {
+     width: 92%;
+     height: auto;
+     display: flex;
+     flex-flow: column;
+     justify-content: space-around;
+     border-bottom: 1px solid black;
+
+ }
+
+ #pdf-body #left-body,
+ #pdf-body #center-body,
+ #pdf-body #right-body {
+     display: flex;
+     width: 100%;
+     align-items: flex-end;
+     justify-content: space-between;
+ }
+
+
+
+
+ #pdf-footer {
+     width: 92%;
+     height: auto;
+     display: flex;
+     flex-flow: column;
+     /* justify-content: space-between; */
+ }
+
+ #pdf-footer div:nth-child(1) {
+     display: flex;
+ }
+
+ .list-title {
+     margin-left: 20px;
+ }
+
+ #pdf-footer div:nth-child(2),
+ #pdf-footer div:nth-child(3) {
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-end;
+ }
+
+
+ #training-div {
+     display: flex;
+     flex-flow: column;
+ }
+
+ #skills-div {
+     display: flex;
+     flex-flow: column;
+     text-align: left;
+     align-self: flex-start;
+ }
+
+ .skills-left {
+     align-self: flex-start;
+ }
+
+
+
+
+
+
 
 
  @media (min-width: 600px) {
+
+     #pdf-header {
+         align-content: space-between;
+     }
+
      #labor-union {
          display: inherit;
          position: absolute;
-         width: 20%;
-         bottom: -150px;
-         right: 0%;
+         width: 50%;
+         bottom: -50px;
          margin: 5px 0px;
          font-size: 18px;
      }
@@ -35,4 +158,20 @@
      .social-links {
          height: 40px;
      }
+
+     .type-of-work {
+         font-size: 15px;
+         margin-top: 10px;
+         font-weight: 600;
+     }
+
+     #title {
+         font-size: 16px;
+     }
+
+     #pdf-content {
+         font-size: 14px;
+     }
  }
+
+ @media(min-width:992px) {}
