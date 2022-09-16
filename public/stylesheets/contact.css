@@ -65,6 +65,10 @@ a {
         height: 40px;
         justify-content: center;
     }
+
+    #background-image {
+        background: linear-gradient(#000902, #4d935e);
+    }
 }
 
 

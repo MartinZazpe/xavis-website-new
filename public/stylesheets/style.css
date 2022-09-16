@@ -212,7 +212,7 @@ header {
   display: flex;
   flex-flow: column wrap;
   white-space: nowrap;
-  color: #e7e0e0;
+  color: #322b2b;
 }
 
 #title-container #labor-union {
@@ -451,23 +451,14 @@ footer {
 @media (min-width:600px) {
 
 
-
-
-  body {
-    font-size: 18px;
+  #name {
+    font-size: 26px !important;
   }
 
-
-  #main-section {
-    height: 100vh;
-    width: 100vw;
-    background: white !important;
-    transition: width 0.5s ease-in;
-    flex-flow: column wrap;
-    /* justify-content: space-evenly; */
-    /* justify-content: space-around; */
-    /* align-items: flex-end; */
-    /* overflow: hidden; */
+  /* Will change once i can fix*/
+  body {
+    padding: 20px;
+    justify-content: center !important;
   }
 
   #left-container {
@@ -527,11 +518,12 @@ footer {
 
   #copyright {
     display: initial !important;
-    color: black !important;
+    /* color: black !important; */
+    color: rgb(219, 213, 213) !important;
   }
 
   #title-container {
-    width: 80%;
+    width: 100%;
   }
 
   /* .social-links-tablet {
@@ -547,13 +539,29 @@ footer {
   }
 
 
+  #main-section {
+    height: 100%;
+    width: 100%;
+    /* background: radial-gradient(white 0%, white 95%, #4d935e 100%); */
+    background: white !important;
+    transition: width 0.5s ease-in;
+    flex-flow: column wrap;
+    /* box-shadow: 0px 0px 25px 25px rgba(55, 54, 51, 1); */
+    /* justify-content: space-evenly; */
+    /* justify-content: space-around; */
+    /* align-items: flex-end; */
+    /* overflow: hidden; */
+  }
+
   #background-image {
-    visibility: hidden;
-    opacity: 0;
+    /* visibility: hidden;
+    opacity: 0; */
     /* background-color: #ad9e9e; */
+    background: linear-gradient(#000902, #4d935e) !important;
+    /* background: radial-gradient(#000902, #4d935e) !important; */
     transition: visibility 2s linear, opacity 2s linear;
     z-index: -3;
-    display: none;
+    /* display: none; */
   }
 
   body {
@@ -647,9 +655,14 @@ footer {
   }
 
 
-  #left-container header div div {
+
+  /* #navbar-tablet a li {
+    color: white !important;
+  } */
+
+  /* #left-container header div div {
     color: black;
-  }
+  } */
 
   #title-container {
     padding: 0px !important;
@@ -662,6 +675,10 @@ footer {
 
 
 @media (min-width: 992px) {
+
+  #name {
+    font-size: 28px !important;
+  }
 
   #title-container,
   #title-major-container {
@@ -690,7 +707,7 @@ footer {
 
   #navbar-tablet {
     /* padding: 10px; */
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-flow: row;
     justify-content: space-evenly;
@@ -703,7 +720,7 @@ footer {
 
   #main-section {
     height: 100%;
-    width: 100vw;
+    width: 100%;
     flex-flow: column wrap;
     /* justify-content: space-evenly; */
     scroll-behavior: smooth;
@@ -718,7 +735,7 @@ footer {
 
 
   #right-container {
-    width: 100vw;
+    width: 100%;
     background: none;
     /* height: 70vh; */
     display: flex;

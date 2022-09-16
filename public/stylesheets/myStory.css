@@ -125,9 +125,11 @@ footer {
         border-radius: 12px;
         max-width: auto;
         display: Flex;
+        flex-flow: column;
         align-items: flex-start;
         justify-content: flex-start;
         height: 100%;
+        flex-grow: 1;
     }
 
 
@@ -171,7 +173,7 @@ footer {
 
     footer {
         height: auto;
-        background-color: white;
+        /* background-color: white; */
         display: flex;
         flex-flow: column wrap;
         /* justify-content: space-evenly; */
@@ -263,7 +265,7 @@ footer {
 
 
     #myStoryContainer {
-        height: 90% !important;
+        height: 100% !important;
     }
 
     #story-img-container {
