@@ -41,6 +41,7 @@
      width: 80% !important;
      height: 50% !important;
      top: center;
+     left: 25%;
  }
 
  .dimHeadshot {
@@ -205,8 +206,6 @@
 
 
 
-
-
  @media (min-width:600px) {
 
 
@@ -221,7 +220,11 @@
      }
 
      #headshots-container {
-         height: calc(100% - 30px)
+         height: calc(100% - 30px);
+         display: grid;
+         gap: 10px;
+         grid-template-columns: repeat(auto-fit, 250px);
+         justify-content: center;
      }
 
      #main-section {
@@ -290,6 +293,10 @@
         height: 75vh
     } */
 
+     #headshots-container {
+         grid-template-columns: repeat(auto-fit, 300px);
+     }
+
      #headshots-container>* {
          /* background-size: 150px; */
          width: 300px;
@@ -320,6 +327,10 @@
          height: 600px !important;
      }
 
+
+     #headshots-container {
+         grid-template-columns: repeat(auto-fit, 350px);
+     }
 
      #headshots-container>* {
          width: 300px;

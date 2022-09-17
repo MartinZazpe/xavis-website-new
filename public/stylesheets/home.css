@@ -19,6 +19,8 @@
 
 #title-container {
     color: #CCC1C1
+        /* color: #322b2b; */
+        /* background-color: linear-gradient(#322b2b, #118322) !important */
 }
 
 
@@ -139,8 +141,24 @@ footer {
 
 @media(max-width:599px) and (orientation: landscape) {}
 
+
+
+
+
 @media (min-width:600px) {
 
+    /* #title-container #name {
+        background-color: #6b6868;
+        background-image: linear-gradient(45deg, #242020, #2ba93e) !important;
+        background-size: 100%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    } */
+
+    #left-container {
+        overflow: scroll;
+    }
 
     #labor-union {
         display: none;
@@ -203,6 +221,7 @@ footer {
 
     #title-container {
         width: 100%;
+        justify-content: center;
     }
 
     #background-image {
@@ -222,12 +241,14 @@ footer {
         background: url('../images/background/bg-image.jpg');
         background-size: cover;
         background-position: center;
+        /* height: 100vh !important; */
         height: 100vh !important;
         width: 50%;
         display: flex;
         flex-flow: column row;
         align-items: flex-end;
     }
+
 
     .social-links {
         display: none;
@@ -272,7 +293,7 @@ footer {
 
 
     #navbar-tablet li {
-        border-bottom: 0.5px solid rgb(163, 159, 159);
+        /* border-bottom: 0.5px solid rgb(163, 159, 159); */
         border-radius: 10px;
         color: black;
         list-style-type: none;
@@ -282,12 +303,60 @@ footer {
 }
 
 
-/* @media(min-width:1000px) and (max-height:800px) {
-    #right-container {
-        height: 65vh !important;
-        align-items:flex-start
+
+/* fix those super wide and short devices */
+
+@media(min-width:600px) and (max-height:600px) {
+    #left-container {
+        flex-flow: row !important;
     }
-} */
+
+    #name {
+        width: 50%;
+    }
+
+
+    #navbar-tablet {
+        width: 50% !important;
+        justify-content: center !important;
+    }
+}
+
+@media(min-width:600px) and (max-height:800px) {
+    /* #right-container {
+        height: auto !important;
+    } */
+
+    #desktop-landing-images {
+        align-items: center !important;
+        /* width: 80% !important;
+        background-repeat: no-repeat !important; */
+    }
+
+    #desktop-landing-images>* {
+        width: 25% !important;
+    }
+
+    #name {
+        width: 100%;
+    }
+
+    #left-container {
+        flex-flow: column !important;
+    }
+
+    #navbar-tablet {
+        width: 100% !important;
+        justify-content: center !important;
+    }
+}
+
+
+/* End of fix those super wide and short devices */
+
+
+
+
 
 @media (min-width: 992px) {
 
@@ -308,10 +377,6 @@ footer {
 
     #left-container {
         height: 15vh !important;
-    }
-
-    .title-major-container {
-        height: auto;
     }
 
 
@@ -358,7 +423,7 @@ footer {
     #right-container {
         width: 100%;
         background: none;
-        height: 80vh !important;
+        height: 75vh !important;
         display: flex;
         align-items: center;
     }
@@ -404,11 +469,11 @@ footer {
         margin: 0 !important;
     }
 
+    /* 
     #copyright {
-        /* background-color: white; */
         color: black !important;
         padding: 0px !important
-    }
+    } */
 
     .social-links {
         height: 40px;
