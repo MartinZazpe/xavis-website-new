@@ -72,6 +72,8 @@ footer {
 
 
 
+
+
 /* fix for smaller devices like an iphone 5 */
 /* @media (min-width: 380px) and (min-height:730px) {
     #myStoryContainer p {
@@ -103,12 +105,19 @@ footer {
 
 } */
 
+#story-text-container h4 {
+    background-color: white;
+}
 
 
 /* This small fix is just for shorter devices */
 @media (max-height:820px) {}
 
 @media (min-width:600px) {
+
+    #story-text-container h4 {
+        background-color: transparent;
+    }
 
     body {
         overflow: scroll;
@@ -212,8 +221,8 @@ footer {
     } */
 
     #right-container {
-        height: 75vh;
-        align-items: flex-start;
+        height: 75%;
+        align-items: center;
     }
 
 
