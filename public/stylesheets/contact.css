@@ -33,7 +33,7 @@
     display: flex;
     flex-flow: column wrap;
     margin-left: auto;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-content: center;
     align-items: baseline;
     height: 60%;

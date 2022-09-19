@@ -233,6 +233,7 @@ footer {
         /* background: linear-gradient(#000902, #4d935e); */
         transition: visibility 2s linear, opacity 2s linear;
         z-index: -3;
+        opacity: 0.8;
     }
 
 

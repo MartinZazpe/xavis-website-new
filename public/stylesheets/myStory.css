@@ -123,10 +123,43 @@ footer {
         overflow: scroll;
     }
 
-    #myStoryContainer {
-        overflow: hidden;
+
+    #right-container {
+        height: 75%;
+        align-items: center;
+        overflow: scroll !important;
     }
 
+
+
+    #myStoryContainer {
+        flex-flow: column;
+        justify-content: center;
+        padding: 0px 10px;
+        align-items: flex-start;
+        position: relative;
+        width: 100%;
+        height: 100% !important;
+        /* overflow: hidden; */
+    }
+
+    #story-img-container {
+        height: 50% !important;
+        display: flex;
+    }
+
+    #story-img-container div h4 {
+        margin: 0px;
+    }
+
+
+
+    #myStoryContainer img {
+        z-index: 100;
+        max-width: 50%;
+        height: auto;
+        border-radius: 12px 0px 0px 12px;
+    }
 
 
     #story-text-container {
@@ -137,33 +170,14 @@ footer {
         flex-flow: column;
         align-items: flex-start;
         justify-content: flex-start;
-        height: 100%;
+        height: 50%;
         flex-grow: 1;
     }
 
 
-    #myStoryContainer {
-        flex-flow: row;
-        justify-content: center;
-        padding: 0px 10px;
-        align-items: flex-start;
-        position: relative;
-        width: 100%;
-        height: 80% !important;
 
-    }
-
-    #story-img-container {
-        height: 100%;
-        max-width: 60%;
-
-    }
-
-    #myStoryContainer img {
-        z-index: 100;
-        max-width: 100%;
-        height: auto;
-        border-radius: 12px 0px 0px 12px;
+    #story-text-container h4 {
+        margin: 0px;
     }
 
     #myStoryContainer p {
@@ -175,9 +189,17 @@ footer {
         padding: 15px;
         max-width: 100%;
         height: 100%;
-        border: 1px solid rgb(210, 206, 206);
         margin: 0;
+        margin: 0px;
     }
+
+    #story-text-container,
+    #story-img-container div {
+        border: 1px solid rgb(210, 206, 206);
+        padding: 10px;
+        margin: 10px;
+    }
+
 
 
     footer {
@@ -219,11 +241,6 @@ footer {
     /* #left-container {
         height: 20vh;
     } */
-
-    #right-container {
-        height: 75%;
-        align-items: center;
-    }
 
 
 
