@@ -463,7 +463,6 @@ footer {
         width: 100%;
         display: flex;
         justify-content: space-between;
-
     }
 
     #desktop-landing-images img {
@@ -531,7 +530,11 @@ footer {
     }
 }
 
-@media(min-width:992px) and (max-height:800px) {
+@media(min-width:992px) and (max-height:850px) {
+
+    #title-container {
+        background: white;
+    }
 
     #name {
         width: 40%;
@@ -540,8 +543,17 @@ footer {
         align-items: center;
     }
 
+
+    #desktop-landing-images img {
+        width: 20% !important;
+    }
+
     #left-container {
         flex-flow: row !important;
+    }
+
+    #right-container {
+        overflow: hidden;
     }
 
     #navbar-tablet {

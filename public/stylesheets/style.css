@@ -460,22 +460,23 @@ footer {
 
 
 
-
-
 @media(max-width:599px) and (orientation: landscape) {}
 
 
 /* fix those super wide and short devices */
 
-@media(min-width:600px) and (max-height:800px) {
+@media(min-width:600px) and (max-height:850px) {
 
+  #name span {
+    display: block;
+  }
 
   #name span {
     padding-right: 5px;
   }
 
   #name {
-    width: 40%;
+    width: 30%;
     display: block;
     justify-content: center;
     align-items: center;
@@ -697,15 +698,32 @@ footer {
     flex-flow: row;
     justify-content: space-evenly;
     /* border-top: 0.5px solid rgb(194, 188, 188); */
-    border-bottom: 0.5px solid rgb(194, 188, 188);
-    /* margin-bottom: 0; */
+    /* border-bottom: 0.5px solid rgb(194, 188, 188); */
+    /* line-height: 0.5em; */
   }
+
+  #navbar-tablet {
+    display: Flex;
+    flex-direction: row;
+    justify-content: space-evenly !important;
+    align-content: space-between;
+  }
+
+  #navbar-tablet::before,
+  #navbar-tablet::after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 0.5px solid rgb(194, 188, 188);
+    /* margin: auto; */
+  }
+
 
   #navbar-tablet li {
     border-radius: 10px 10px 0px 0px;
     border-top: 0.5px solid rgb(194, 188, 188);
     border-right: 0.5px solid rgb(194, 188, 188);
     border-left: 0.5px solid rgb(194, 188, 188);
+
     color: black;
     list-style-type: none;
     padding: 10px;
@@ -714,7 +732,9 @@ footer {
   }
 
   #navbar-tablet a {
-    overflow: hidden
+    overflow: hidden;
+    margin: 0px 5px 0px 5px;
+    /* width: max-content !important */
   }
 
   #navbar-tablet a li:hover {

@@ -1,0 +1,43 @@
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+p {
+    font-size: 1.2rem;
+    color: rgb(227, 221, 221);
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#home-link {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+#home-link a {
+    z-index: 10;
+    font-size: 1.6rem;
+    color: white;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(177, 159, 159, 0.5);
+    border-radius: 10px;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+#background-image {
+    z-index: -10;
+}
