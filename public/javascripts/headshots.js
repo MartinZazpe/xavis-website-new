@@ -118,6 +118,17 @@ window.addEventListener("load", function () {
         bar3.classList.remove('transformToX2')
         hambMenu.style.display = "inherit"
 
+        Array.from(headShotsContainer.children).forEach((child, index) => {
+            selectedImg.classList.remove('dimHeadshot')
+            selectedImg.classList.remove('enlarge')
+            for (let i = 0;i < headShotsContainer.children.length;i++) {
+                if (!headShotsContainer.children[i].classList.contains('enlarge')) {
+                    headShotsContainer.children[i].classList.remove('dimHeadshot')
+                    headShotsContainer.style.overflow = "scroll"
+                    selectedImg.classList.remove('dimHeadshot')
+                }
+            }
+        })
     }
 
 

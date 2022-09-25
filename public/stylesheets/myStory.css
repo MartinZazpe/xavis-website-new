@@ -69,51 +69,52 @@ footer {
     color: rgb(21, 171, 194)
 }
 
-
-
-
-
-
-/* fix for smaller devices like an iphone 5 */
-/* @media (min-width: 380px) and (min-height:730px) {
-    #myStoryContainer p {
-        padding: 10px;
-        height: auto;
-    }
-
-    #myStoryContainer #story-img-container {
-        height: 60%;
-
-    }
-
-    #myStoryContainer #story-text-container {
-        height: 40%;
-    }
-} */
-
-
-/* applied fixes for smaller devices, upon 360 is a bit more normal.. */
-/* @media (min-width:360px) {
-
-    #myStoryContainer {
-        font-size: 16px;
-    }
-
-    #myStoryContainer img {
-        max-width: 250px;
-    }
-
-} */
-
-#story-text-container h4 {
-    background-color: white;
+#story-img-container {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
 }
+
+#story-img-container div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#story-img-container div:hover {
+    cursor: pointer;
+}
+
+
+#story-img-container h4 {
+    background-color: rgb(220, 212, 212);
+    padding: 5px;
+    border-radius: 5px;
+    width: max-content
+}
+
+
+
+
+
 
 
 /* This small fix is just for shorter devices */
 @media (max-height:820px) {}
 
 @media (min-width:600px) {
+
+    #story-text-container {
+        width: 100%;
+    }
+
+    #story-text-container div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 
     #story-text-container h4 {
         background-color: transparent;
@@ -144,19 +145,20 @@ footer {
     }
 
     #story-img-container {
-        height: 50% !important;
+        /* height: 60% !important; */
         display: flex;
+        flex-flow: column;
+        position: relative;
     }
 
     #story-img-container div h4 {
-        margin: 0px;
+        text-align: center;
     }
-
 
 
     #myStoryContainer img {
         z-index: 100;
-        max-width: 50%;
+        /* max-width: 60%; */
         height: auto;
         border-radius: 12px 0px 0px 12px;
     }
@@ -170,11 +172,9 @@ footer {
         flex-flow: column;
         align-items: flex-start;
         justify-content: flex-start;
-        height: 50%;
+        height: 40%;
         flex-grow: 1;
     }
-
-
 
     #story-text-container h4 {
         margin: 0px;
@@ -182,23 +182,23 @@ footer {
 
     #myStoryContainer p {
         color: black;
-        font-size: 18px;
+        font-size: 20px;
         overflow-y: scroll;
         background-color: white;
         border-radius: 0px 12px 12px 0px;
-        padding: 15px;
+        padding: 20px;
         max-width: 100%;
         height: 100%;
         margin: 0;
         margin: 0px;
     }
 
-    #story-text-container,
+    /* #story-text-container,
     #story-img-container div {
         border: 1px solid rgb(210, 206, 206);
         padding: 10px;
         margin: 10px;
-    }
+    } */
 
 
 
@@ -254,31 +254,7 @@ footer {
     }
 
 
-    #myStoryContainer p {
-        line-height: 2;
-        height: 400px;
-    }
 
-    #myStoryContainer img {
-        max-width: 500px;
-        height: auto;
-    }
-
-    #myStoryContainer {
-        flex-flow: row;
-        justify-content: center;
-        padding: 0px 10px;
-    }
-
-    #myStoryContainer #story-img-container {
-        height: 100%;
-
-    }
-
-    #myStoryContainer #story-text-container {
-        height: 100%;
-        background-color: rgba(191, 228, 177, 0.3);
-    }
 
 
 
@@ -287,44 +263,4 @@ footer {
 
 
 
-@media(min-width:1200px) {
-
-
-    #myStoryContainer {
-        height: 100% !important;
-    }
-
-    #story-img-container {
-        height: 100%;
-        max-width: 60%;
-    }
-
-    #story-text-container {
-        width: 30%;
-        height: 100%;
-        align-items: center;
-    }
-
-    #story-text-container p {
-        line-height: 2;
-        height: 100%;
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-    }
-
-
-    #myStoryContainer img {
-        max-width: 800px;
-        height: auto;
-    }
-
-
-
-    #myStoryContainer {
-        width: 100%;
-        /* justify-content: space-evenly; */
-        /* padding: 0px 150px; */
-    }
-
-}
+@media(min-width:1200px) {}

@@ -315,7 +315,7 @@ footer {
 
 /* fix those super wide and short devices */
 
-@media(min-width:600px) and (max-height:600px) {
+/* @media(min-width:600px) and (max-height:600px) {
 
     #name span {
         display: block;
@@ -334,9 +334,9 @@ footer {
         width: 50% !important;
         justify-content: center !important;
     }
-}
+} */
 
-@media(min-width:600px) and (max-height:800px) {
+@media(min-width:600px) and (max-height:600px) {
 
     #name span {
         display: block;
@@ -519,19 +519,8 @@ footer {
     }
 }
 
-@media (min-width:992px) and (max-height:500px) {
 
-    #desktop-landing-images {
-        /* height: 40% !important; */
-        background: transparent !important;
-    }
-
-    #desktop-landing-images img {
-        width: 15% !important;
-    }
-}
-
-@media(min-width:992px) and (max-height:850px) {
+@media(min-width:992px) and (max-height: 600px) {
 
     #title-container {
         background: white;

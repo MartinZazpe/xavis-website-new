@@ -40,17 +40,24 @@
 }
 
 a i {
-    color: white;
+    color: rgb(62, 58, 58);
 }
 
 a {
     color: rgb(9, 94, 130);
+    transition: 0.3s linear;
 }
+
+
+a:hover {
+    transform: scale(1.05);
+}
+
 
 @media (min-width: 600px) {
 
     #contact-container {
-        height: 500px;
+        height: 400px;
         background-color: rgba(192, 223, 190, 0.4);
     }
 

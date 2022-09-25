@@ -14,6 +14,9 @@ window.addEventListener('load', () => {
     const noDisplay = document.getElementsByClassName('noDisplay')
     var headShotsContainer = document.getElementById('headshots-container')
     const copyright = document.getElementById('copyright')
+    const translateButton = document.querySelector('#story-img-container div ')
+    const spanishText = document.getElementById('spanish')
+    const englishText = document.getElementById('english')
 
 
     const hambMenuNav = document.getElementById('hamburguer-menu-navbar')
@@ -54,6 +57,28 @@ window.addEventListener('load', () => {
             hambMenu.style.display = "inherit"
         }
     })
+
+
+    translateButton.onclick = () => {
+        translateButton.classList.toggle('active')
+        if (translateButton.classList.contains('active')) {
+            let h4item = translateButton.querySelector('h4')
+            h4item.innerText = "Leer en Español"
+            spanishText.classList.toggle('noDisplay')
+            englishText.classList.toggle('noDisplay')
+        }
+        else if (!translateButton.classList.contains('active')) {
+            let h4item = translateButton.querySelector('h4')
+            h4item.innerText = "Read in English"
+            spanishText.classList.toggle('noDisplay')
+            englishText.classList.toggle('noDisplay')
+        }
+    }
+
+
+
+
+
 
     window.onresize = () => {
         copyright.style.display = "none"
