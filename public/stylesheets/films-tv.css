@@ -51,7 +51,7 @@ footer {
 
 
 #works-container video {
-    border-radius: 12px;
+    border-radius: 0px 0px 12px 12px;
 }
 
 #main-project {
@@ -136,7 +136,7 @@ footer {
 }
 
 .project p {
-    position: absolute;
+    /* position: absolute; */
     z-index: 10;
     /* background-color: rgba(0, 0, 0, 0.8); */
     background-color: rgba(204, 232, 236, 0.9);
@@ -192,6 +192,8 @@ footer {
 
     .project {
         width: auto;
+        padding: 10px;
+        background-color: rgba(117, 137, 69, 0.5);
     }
 
     /* .project p {

@@ -89,7 +89,7 @@ footer {
 
 
 #story-img-container h4 {
-    background-color: rgb(220, 212, 212);
+    background-color: rgb(238, 233, 233);
     padding: 5px;
     border-radius: 5px;
     width: max-content
@@ -145,7 +145,7 @@ footer {
     }
 
     #story-img-container {
-        /* height: 60% !important; */
+        height: 60% !important;
         display: flex;
         flex-flow: column;
         position: relative;
@@ -251,6 +251,15 @@ footer {
 
     #main-section {
         height: 100vh;
+    }
+
+
+    #story-img-container {
+        height: 70% !important;
+    }
+
+    #myStoryContainer img {
+        max-width: 300px;
     }
 
 

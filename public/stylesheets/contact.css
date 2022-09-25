@@ -22,7 +22,7 @@
 
 #contact-container {
     align-self: center;
-    width: 80%;
+    width: 70%;
     height: 350px;
     border-radius: 15px;
     background-color: rgba(217, 217, 217, 0.6);
@@ -40,7 +40,7 @@
 }
 
 a i {
-    color: rgb(62, 58, 58);
+    color: rgb(141, 133, 133);
 }
 
 a {
@@ -85,6 +85,6 @@ a:hover {
     }
 
     #contact-container {
-        width: 50%;
+        width: 40%;
     }
 }

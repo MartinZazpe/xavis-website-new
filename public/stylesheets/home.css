@@ -535,7 +535,7 @@ footer {
 
 
     #desktop-landing-images img {
-        width: 20% !important;
+        width: 24% !important;
     }
 
     #left-container {
@@ -559,6 +559,9 @@ footer {
 
 @media (min-width: 1200px) {
 
+    #title-container {
+        background: white;
+    }
 
 
     /* #right-container{
