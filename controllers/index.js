@@ -22,7 +22,7 @@ module.exports = {
     },
 
     myResumeDownload: (req, res) => {
-        file = 'public/images/resume/XaviResume.pdf'
+        file = 'public/images/resume/XAVIER-RH-RESUME.pdf'
         res.download(file)
     },
 

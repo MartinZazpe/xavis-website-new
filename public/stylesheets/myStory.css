@@ -145,7 +145,7 @@ footer {
     }
 
     #story-img-container {
-        height: 60% !important;
+        height: 70% !important;
         display: flex;
         flex-flow: column;
         position: relative;
@@ -172,7 +172,7 @@ footer {
         flex-flow: column;
         align-items: flex-start;
         justify-content: flex-start;
-        height: 40%;
+        height: 30%;
         flex-grow: 1;
     }
 
@@ -241,9 +241,21 @@ footer {
     /* #left-container {
         height: 20vh;
     } */
+}
 
 
+@media (min-width:600px) and (max-height:550px) {
+    #myStoryContainer {
+        flex-flow: row;
+    }
 
+    #story-img-container {
+        height: 100% !important;
+    }
+
+    #story-img-container img {
+        margin: 20px 0px 0px 0px;
+    }
 }
 
 
