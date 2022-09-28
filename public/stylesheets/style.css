@@ -377,7 +377,7 @@ footer {
 
 
 .Lateral-links-container {
-  height: 30vh;
+  height: 15%;
   display: flex;
   flex-flow: wrap;
 }
@@ -399,12 +399,12 @@ footer {
 }
 
 #copyright {
-  padding: 0px 10px;
+  padding: 5px 10px;
 }
 
 #emptyDiv {
   width: 100%;
-  height: 40%
+  height: 25%
     /* padding-right: 10px; */
 }
 
