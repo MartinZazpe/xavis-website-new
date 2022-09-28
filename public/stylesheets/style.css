@@ -77,7 +77,8 @@ a {
 }
 
 p {
-  color: #666
+  /* color: #666 */
+  color: #000
 }
 
 #name {
@@ -170,7 +171,7 @@ body {
 
 
 #right-container {
-  height: calc(85vh - 40px);
+  height: 80%;
   width: 100%;
 }
 
