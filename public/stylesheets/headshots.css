@@ -85,6 +85,7 @@
      /* width: 500px;
     height: 300px; */
      background: url("../images/headshots/headshot1.jpg");
+     background-position: center;
      background-size: cover;
      border-radius: 3px;
      width: 35vw;
@@ -105,7 +106,7 @@
 
 
  #headshot-image-container3 {
-     background-position: top;
+     background-position: center;
      background-image: url("../images/headshots/headshot3.jpg");
      background-size: cover;
      background-position: center;
@@ -192,7 +193,9 @@
     height: 182px;
 } */
 
-
+ .social-links {
+     display: none
+ }
 
 
  /* fix for those super thin devices*/
@@ -210,7 +213,10 @@
 
  @media (min-width:600px) {
 
-
+     .social-links {
+         display: inherit;
+         height: 40px;
+     }
 
      #right-container {
          flex-flow: column wrap;

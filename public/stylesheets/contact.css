@@ -53,8 +53,17 @@ a:hover {
     transform: scale(1.05);
 }
 
+.social-links {
+    display: none
+}
+
 
 @media (min-width: 600px) {
+
+    .social-links {
+        display: inherit;
+        height: 40px;
+    }
 
     #contact-container {
         height: 400px;

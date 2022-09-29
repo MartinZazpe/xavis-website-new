@@ -226,6 +226,11 @@
  }
 
 
+
+ .social-links {
+     display: none;
+ }
+
  @media (min-width: 600px) {
 
      #pdf-header {
@@ -246,6 +251,7 @@
      }
 
      .social-links {
+         display: inherit;
          height: 40px;
      }
 

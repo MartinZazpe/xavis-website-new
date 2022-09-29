@@ -163,6 +163,10 @@ footer {
 }
 
 
+.social-links {
+    display: none
+}
+
 
 
 /* fix for smaller devices like an iphone 5 */
@@ -174,6 +178,12 @@ footer {
 
 
 @media (min-width:600px) {
+
+
+    .social-links {
+        display: inherit;
+        height: 40px;
+    }
 
     /* body {
         overflow: scroll !important;

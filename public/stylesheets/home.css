@@ -143,6 +143,10 @@ footer {
 }
 
 
+.social-links {
+    display: none
+}
+
 @media(max-width:599px) and (orientation: landscape) {}
 
 
@@ -150,6 +154,11 @@ footer {
 
 
 @media (min-width:600px) {
+
+    .social-links {
+        display: inherit;
+        height: 40px;
+    }
 
     /* #title-container #name {
         background-color: #6b6868;
