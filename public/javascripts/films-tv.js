@@ -41,6 +41,7 @@ window.addEventListener('load', () => {
             lateralNavbar.style.display = "initial"
             footer.classList.toggle('footerTransition')
             socialLinks.classList.toggle('w50')
+            socialLinks.style.display = "inherit"
             bar1.classList.toggle('transformToX1')
             bar2.classList.toggle('noDisplay')
             bar3.classList.toggle('transformToX2')
@@ -52,6 +53,7 @@ window.addEventListener('load', () => {
             lateralMenuNavbar.classList.toggle('noDisplay')
             lateralMenuLinks.classList.toggle('noDisplay')
             socialLinks.classList.toggle('w50')
+            socialLinks.style.display = "none"
             bar1.classList.toggle('transformToX1')
             bar2.classList.toggle('noDisplay')
             bar3.classList.toggle('transformToX2')
