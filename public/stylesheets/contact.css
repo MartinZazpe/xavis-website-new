@@ -44,7 +44,7 @@ a i {
 }
 
 a {
-    color: rgb(208, 226, 215);
+    color: rgb(33, 77, 50);
     transition: 0.3s linear;
 }
 
@@ -55,6 +55,11 @@ a:hover {
 
 .social-links {
     display: none
+}
+
+#labor-union {
+    color: white !important;
+    font-weight: bold;
 }
 
 
