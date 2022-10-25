@@ -41,7 +41,7 @@ window.addEventListener("load", function () {
             // console.log(headShotsContainer.children[index])
             selectedImg = headShotsContainer.children[index]
             headShotsContainer.children[index].classList.toggle('enlarge')
-            headShotsContainer.children[index].scrollIntoView({ block: "center", behavior: "smooth" })
+            // headShotsContainer.children[index].scrollIntoView({ block: "center", behavior: "smooth" })
             headShotsContainer.style.overflow = "hidden"
             if (selectedImg.classList.contains('enlarge')) {
                 for (let i = 0;i < headShotsContainer.children.length;i++) {
