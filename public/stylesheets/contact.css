@@ -40,11 +40,11 @@
 }
 
 a i {
-    color: rgb(141, 133, 133);
+    color: rgb(32, 116, 71);
 }
 
 a {
-    color: rgb(9, 94, 130);
+    color: rgb(208, 226, 215);
     transition: 0.3s linear;
 }
 
@@ -84,6 +84,11 @@ a:hover {
 
     #background-image {
         background: linear-gradient(#000902, #4d935e);
+    }
+
+    a {
+        color: rgba(1, 46, 21, 0.529);
+        transition: 0.3s linear;
     }
 }
 

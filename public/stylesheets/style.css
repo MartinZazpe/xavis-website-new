@@ -164,7 +164,7 @@ body {
 #main-section {
   display: flex;
   flex-flow: column wrap;
-  height: 100vh;
+  height: 100%;
   position: relative;
   /* overflow: hidden; */
 }

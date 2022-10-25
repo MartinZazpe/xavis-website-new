@@ -209,8 +209,9 @@ footer {
     }
 
     .project {
-        padding: 10px;
-        background-color: rgba(159, 175, 122, 0.3);
+        padding: 5px;
+        /* background-color: rgba(159, 175, 122, 0.3); */
+        background: radial-gradient(#0e5f11, #4f9a52, #d6ddd6);
     }
 
     /* iframe {

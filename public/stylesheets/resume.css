@@ -27,14 +27,14 @@
 
  #pdf-content {
      height: 100%;
-     width: 95%;
+     width: 90%;
      background-color: white;
      display: flex;
      align-self: center;
      flex-flow: column;
      align-items: center;
      font-size: 9px;
-     padding: 20px 0px;
+     padding: 20px 0px 40px 0px;
      overflow: scroll;
  }
 
