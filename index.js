@@ -51,7 +51,7 @@ var path = require('path')
 var cookieParser = require('cookie-parser')
 var logger = require('morgan')
 
-var indexRouter = require('./api/index')
+var indexRouter = require('./api/mainRoutes')
 
 var app = express()
 
