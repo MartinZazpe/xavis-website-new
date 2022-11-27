@@ -8,6 +8,12 @@ var indexRouter = require('./routes/index')
 
 var app = express()
 
+const port = process.env.PORT || 3000
+
+app.listen(port, () => {
+  console.log(`server is running in port ${port}`)
+})
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
