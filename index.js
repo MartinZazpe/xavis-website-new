@@ -4,12 +4,11 @@ var path = require('path')
 var cookieParser = require('cookie-parser')
 var logger = require('morgan')
 
-var indexRouter = require('./routes/index')
+var indexRouter = require('./api/index')
 
 var app = express()
 
 const port = process.env.PORT || 3000
-
 app.listen(port, () => {
   console.log(`server is running in port ${port}`)
 })
