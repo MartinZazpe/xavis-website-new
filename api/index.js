@@ -2,9 +2,15 @@ var express = require('express')
 var router = express.Router()
 var indexController = require('../controllers/index')
 
+/* GET home page test.  */
+router.get('/', function (req, res, next) {
+    res.render('home', { title: 'Express' })
+})
+
+
 /* GET home page. */
 
-router.get('/', indexController.home)
+// router.get('/', indexController.home)
 
 router.get('/headshots', indexController.headshots)
 

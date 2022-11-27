@@ -8,7 +8,6 @@ module.exports = {
 
         res.render('home')
 
-
     },
 
     headshots: (req, res) => {
@@ -38,10 +37,6 @@ module.exports = {
     contact: (req, res) => {
         res.render('contact')
     }
-
-
-
-
 
 
 
