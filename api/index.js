@@ -4,12 +4,12 @@ var indexController = require('../controllers/index')
 
 /* GET home page. */
 
-router.get('/', indexController.home)
+router.get('/home', indexController.home)
 
 // router.get('/headshots', indexController.headshots)
 
 // /* resume view */
-router.get('/myResume', indexController.myResume)
+// router.get('/myResume', indexController.myResume)
 
 // /*resume download */
 // router.get('/resumeDownload', indexController.myResumeDownload)
