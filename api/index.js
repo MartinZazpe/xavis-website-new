@@ -1,12 +1,12 @@
 var express = require('express')
 var router = express.Router()
-var indexController = require('../controllers/index.js')
+var indexController = require('../controllers/index')
 
 /* GET home page. */
 
 router.get('/', indexController.home)
 
-// router.get('/headshots', indexController.headshots)
+router.get('/headshots', indexController.headshots)
 
 // /* resume view */
 // router.get('/myResume', indexController.myResume)
