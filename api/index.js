@@ -14,11 +14,11 @@ router.get('/myResume', indexController.myResume)
 // /*resume download */
 // router.get('/resumeDownload', indexController.myResumeDownload)
 
-router.get('/myStory', indexController.myStory)
+// router.get('/myStory', indexController.myStory)
 
 // router.get('/film&Tv', indexController.myWorks)
 
-router.get('/contact', indexController.contact)
+// router.get('/contact', indexController.contact)
 
 
 
